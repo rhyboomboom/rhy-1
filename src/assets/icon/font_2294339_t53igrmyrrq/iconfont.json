@@ -1,0 +1,44 @@
+{
+  "id": "2294339",
+  "name": "icona",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "841000",
+      "name": "待评价",
+      "font_class": "icon4",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "2681679",
+      "name": "等待收货",
+      "font_class": "dengdaishouhuo",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "7898693",
+      "name": "售后服务",
+      "font_class": "shouhoufuwu",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "9666174",
+      "name": "代付款",
+      "font_class": "daifukuan",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "15023358",
+      "name": "订单",
+      "font_class": "dingdan",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    }
+  ]
+}

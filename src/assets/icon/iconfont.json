@@ -1,0 +1,65 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "69502136",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "69502137",
+      "name": "电影",
+      "font_class": "dianying",
+      "unicode": "e661",
+      "unicode_decimal": 58977
+    },
+    {
+      "icon_id": "69502138",
+      "name": "影院",
+      "font_class": "yingyuan",
+      "unicode": "e8c7",
+      "unicode_decimal": 59591
+    },
+    {
+      "icon_id": "69821215",
+      "name": "分类",
+      "font_class": "kinds",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "69821216",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "69821217",
+      "name": "我的",
+      "font_class": "wode1",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "69821218",
+      "name": "首页",
+      "font_class": "shouyex",
+      "unicode": "e615",
+      "unicode_decimal": 58901
+    },
+    {
+      "icon_id": "69837110",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    }
+  ]
+}

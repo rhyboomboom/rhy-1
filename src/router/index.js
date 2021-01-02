@@ -1,23 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-
+import classify from "./list/classify"
+import center from './center/center'
+import homepage from "../router/homepage/homepage"
+import {Notify } from "vant";
+Vue.use(Notify);
 Vue.use(VueRouter)
-
+const originalPush = VueRouter.prototype.push;
+VueRouter.prototype.push = function push(location) {
+    return originalPush.call(this, location).catch((err) => err);
+};
 const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+    ...classify,
+    ...center,
+    homepage,
+    {path:"/",redirect:"/Homepage"}
 ]
 
 const router = new VueRouter({
@@ -25,5 +22,19 @@ const router = new VueRouter({
   base: process.env.BASE_URL,
   routes
 })
+
+router.beforeEach((to,from,next)=>{
+  console.log(to);
+  let arr = ["/pay"]
+  if(arr.includes(to.path) && !window.localStorage.getItem("jwt") ){
+    Notify({ type: 'danger', message: "您还没有登录,稍后为您跳转到登录页面" });
+    setTimeout(()=>{
+      router.push("/login")
+    },3000)
+  }else{
+      next()
+  }
+})
+
 
 export default router
